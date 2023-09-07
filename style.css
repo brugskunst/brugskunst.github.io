@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* ----- GLOBAL AND META ----- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li::before{
+    content:"→ ";
+}
+
+::selection {
+    color: #FFFCF3;
+    background: #DA6934;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ----- BODY AND HTML -----*/
+
+body, html{
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Merriweather', serif;
+    box-sizing: content-box;
+    background-color: #FFFCF3;
+    color: #DA6934;
+    position: relative;
+}
+
+body{
+    font-size: 14px;
+    color: black;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    height: 100%;
+}
+
+body > div, body > ul, body > section{
+    padding: 8px;
+}
+
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+
+#overlay{
+    position: absolute;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFCF3;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* ----- HEADER ----- */
+
+#header *{
+    color: #DA6934;
+}
+
+#header{
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    max-width: 500px;
+
+    margin-bottom: 40px;
+}
+
+h1{
+    font-weight: bold;
+    /* width: 13.64286rem; */
+    flex-shrink: 0;
+}
+
+h1 span{
+    cursor: help;
+}
+
+h2{
+    font-weight: normal;
+    flex: 1 0 0;
+}
+
+h1,h2{
+    font-size: 1rem;
+}
+
+/* Tab selector */
+
+.tab {
+    overflow: hidden;
+    transform: translateX(-4px);
+}
+
+button{
+    background-color: unset;
+    font-size: 1rem;
+    color: #DA6934;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+  
+.tab button {
+    float: left;
+    padding: 8px 8px;
+    margin-right: 0px;
+    transition: 0.3s;
+    opacity: 0.4;
+}
+  
+.tab button:hover {
+    
+    opacity: 1;
+}
+
+.tab button.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+  
+.tabcontent {
+    display: none;    
+}
+
+
+/* CONTENT */
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#content *{
+    color: #DA6934;
+}
+
+
+
+/* Services */
+
+#Tjenester ul{
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+#Tjenester li{
+    margin: 16px 0;
+    cursor:help;
+}
+
+#Tjenester button{
+    padding: 4px 8px;
+    border: 1px solid #DA6934;
+    border-radius: 1000px;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+#Tjenester button:hover{
+    color: #FFFCF3;
+    background-color: #DA6934;
+}
+
+.service:hover{
+    font-weight: bold;
+}
+
+.service:hover .serviceToolTip {
+    display: block;
+}
+
+.serviceToolTip {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #FFFCF3 !important;
+    background: #DA6934;
+    margin-left: 28px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1000;
+    max-width: 250px;
+    border-radius: 2px;
+    line-height: 105%;
+    font-size: 1rem;
+}
+
+#contact_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Galleries */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+  
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.img_container{
+    position: relative;
+}
+
+.img_container p{
+    position: relative;
+    z-index: 1000;
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+
+/* INFO */
+
+#Informasjon p{
+    max-width: 400px;
+    margin: 16px 0;
+    line-height: 24px;
+}
+
+#Informasjon p a{
+    text-decoration: none;
+    border-bottom: dashed;
+}
+
+#Informasjon p a:hover{
+    border-bottom: solid;
+}
+
+/* CONTACT */
+
+#Kontakt a{
+    display: block;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 4px;
+}
+
+#Kontakt a span{
+    margin-left: 4px;
+    transition: 0.3s;
+}
+
+#Kontakt a:hover span{
+    margin-left: 16px;
+}
+
+#Kontakt a:hover{
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer{
+    opacity: 0.5;
+    /* padding-top: 56px; */
+    /* padding-bottom: 24px; */
+    color: #DA6934;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+  
+
+/* ----- MEDIA QUIERIES ----- */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
