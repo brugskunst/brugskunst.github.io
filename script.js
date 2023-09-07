@@ -18,6 +18,12 @@ function openContent(evt, tab) {
 	}
 	document.getElementById(tab).style.display = "block";
 	evt.currentTarget.className += " active";
+
+	console.log(evt);
+}
+
+function setContactTab(){
+	document.getElementById("contactTabButton").className += " active";
 }
 
 // Service Tool tip

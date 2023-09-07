@@ -26,7 +26,7 @@
             <button class="tablinks active" onclick="openContent(event, 'Tjenester')">Tjenester</button>
             <!-- <button class="tablinks" onclick="openContent(event, 'Arbeid')">Arbeid</button> -->
             <button class="tablinks" onclick="openContent(event, 'Informasjon')">Informasjon</button>
-            <button class="tablinks" onclick="openContent(event, 'Kontakt')">Kontakt</button>
+            <button id="contactTabButton" class="tablinks" onclick="openContent(event, 'Kontakt')">Kontakt</button>
         </div>
 
         <div id="content">
@@ -54,7 +54,7 @@
                 </ul>
                 <div id="contact_container">
                     <p>Har du et prosjekt i mente?</p>
-                    <button onclick="openContent(event, 'Kontakt')">Ta kontakt</button>
+                    <button class="tablinks" onclick="openContent(event, 'Kontakt'),setContactTab()">Ta kontakt</button>
                 </div>
             </div>
             <div id="Arbeid" class="tabcontent">
