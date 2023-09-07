@@ -28,12 +28,14 @@ function setContactTab(){
 
 //tips
 var tooltip = document.querySelectorAll('.serviceToolTip');
-var band = document.querySelectorAll('.toolTipImage');
+var img = document.querySelectorAll('.toolTipImage');
 document.addEventListener('mousemove', fn, false);
 function fn(e) {
 
-	band[0].style.left = e.pageX + 'px';
-	band[0].style.top = e.pageY + 'px';
+	for (var i=img.length; i--;) {
+		img[i].style.left = e.pageX + 'px';
+		img[i].style.top = e.pageY + 'px';
+    }
 
     for (var i=tooltip.length; i--;) {
         tooltip[i].style.left = e.pageX + 'px';
