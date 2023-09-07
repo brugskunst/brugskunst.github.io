@@ -84,7 +84,6 @@ body{
     gap: 4px;
     width: 100%;
     max-width: 500px;
-
     margin-bottom: 40px;
 }
 
@@ -254,7 +253,7 @@ button{
 
 #Informasjon p{
     max-width: 400px;
-    margin: 16px 0;
+    margin-bottom: 16px;
     line-height: 24px;
 }
 
@@ -301,6 +300,11 @@ button{
 }
 
 @media screen and (max-width: 600px) {
+    
+    #header{
+        margin-bottom: 16px;
+    }
+    
     #header *{
         font-size: 0.9rem;
     }
