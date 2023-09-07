@@ -48,8 +48,8 @@ body{
     height: 100%;
 }
 
-body > div, body > ul, body > section{
-    padding: 8px;
+body > div{
+    padding: 24px;
 }
 
 
@@ -84,7 +84,6 @@ body{
     gap: 4px;
     width: 100%;
     max-width: 500px;
-    margin-bottom: 40px;
 }
 
 h1{
@@ -252,7 +251,7 @@ button{
 /* INFO */
 
 #Informasjon p{
-    max-width: 400px;
+    max-width: 350px;
     margin-bottom: 16px;
     line-height: 24px;
 }
@@ -267,6 +266,11 @@ button{
 }
 
 /* CONTACT */
+
+#Kontakt{
+    margin-left: -4px;
+    margin-top: -10px;
+}
 
 #Kontakt a{
     display: block;
