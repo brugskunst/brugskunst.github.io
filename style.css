@@ -187,10 +187,6 @@ button{
     background-color: #DA6934;
 }
 
-.service:hover{
-    font-weight: bold;
-}
-
 .service:hover .serviceToolTip {
     display: block;
 }
@@ -289,9 +285,6 @@ button{
     margin-left: 16px;
 }
 
-#Kontakt a:hover{
-    font-weight: bold;
-}
 
 /* FOOTER */
 
