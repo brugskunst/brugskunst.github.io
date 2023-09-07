@@ -32,7 +32,7 @@ var windowSize = window.innerWidth;
 function setSize(){
 	console.log(windowSize);
 	windowSize = window.innerWidth;
-	location.reload();
+	// location.reload();
 }
 
 var tooltip = document.querySelectorAll('.serviceToolTip');
