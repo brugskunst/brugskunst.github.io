@@ -42,7 +42,7 @@ body, html{
 
 body{
     font-size: 14px;
-    color: black;
+    color: #DA6934;
     min-height: -webkit-fill-available;
     width: 100%;
     height: 100%;
@@ -54,7 +54,6 @@ body > div{
 
 
 body{
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -292,6 +291,7 @@ button{
 /* FOOTER */
 
 #footer{
+    height: min-content;
     opacity: 0.5;
     padding-top: 56px;
     padding-bottom: 24px;
