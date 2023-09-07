@@ -15,7 +15,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     </head>
 
-    <body id="body">
+    <body id="body" onresize="setSize()">
         <div id="overlay"></div>
         <div id="header" class="">
             <h1>Kristiansen <span class="service">Brugskunst<span class="serviceToolTip">Fra dansk, "brugskunst" omhandler utformingen av gjenstander og vertkøy i daglig bruk</span></span></h1>
@@ -24,7 +24,7 @@
 
         <div class="tab">
             <button class="tablinks active" onclick="openContent(event, 'Tjenester')">Tjenester</button>
-            <!-- <button class="tablinks" onclick="openContent(event, 'Arbeid')">Arbeid</button> -->
+            <button class="tablinks" onclick="openContent(event, 'Arbeid')">Arbeid</button>
             <button class="tablinks" onclick="openContent(event, 'Informasjon')">Informasjon</button>
             <button id="contactTabButton" class="tablinks" onclick="openContent(event, 'Kontakt')">Kontakt</button>
         </div>
@@ -57,27 +57,25 @@
                     <button class="tablinks" onclick="openContent(event, 'Kontakt'),setContactTab()">Ta kontakt</button>
                 </div>
             </div>
+
             <div id="Arbeid" class="tabcontent">
-                <p>Nylige arbeider fra K/B</p>
-                <div id="work" class="row"> 
-                    <div class="column">
-                        <div class="img_container">
-                            <img class="lozad" src="img/sportscenteret.png" alt="Sportscenteret AS mockup">
-                            <p>Sportscenteret AS</p>
-                        </div>
-                        <div class="img_container">
-                            <img class="lozad" src="img/skorkoken.png" alt="Skokroken AS mockup">
-                            <p>Sportscenteret AS</p>
-                        </div>
+                <p>Nylig arbeid fra K/B</p>
+                <div class="workCollection">
+                    <div class="toolTip workContainer">
+                        <img class="toolTipImage workImg lozad" src="img/sportscenteret.png" alt="Sportscenteret AS mockup">
+                        <a href="https://sportscenteret.no" target="_blank">Sportscenteret AS<span>→</span></a>
                     </div>
-                    <div class="column">
-                        <div class="img_container">
-                            <img class="lozad" src="img/syse.png" alt="Skokroken AS mockup">
-                            <p>Sportscenteret AS</p>
-                        </div>
-                    </div>  
+                    <div class="toolTip workContainer">
+                        <img class="toolTipImage workImg lozad"  src="img/skorkoken.png" alt="Skokroken AS mockup">
+                        <a href="https://skorkoken.no" target="_blank">Skokroken AS<span>→</span></a>
+                    </div>
+                    <div class="toolTip workContainer">
+                        <img class="toolTipImage workImg lozad" src="img/syse.png" alt="Henrik Syse website mockup">
+                        <a href="https://henriksyse.no" target="_blank">Henrik Syse<span>→</span></a>
+                    </div>
                 </div>
             </div>
+
             <div id="Informasjon" class="tabcontent">
                 <p>Kristiansen Brugskunst utformer, utvikler og planlegger statiske og interaktive opplevelser for gøy og nytte.</p>
                 <p>K/B lager for det meste enkle nettsider laget <a href="https://github.com/brugskunst" target="_blank">for hånd</a> (som den du leser nå) eller i <a href="https://www.framer.com/" target="_blank">Framer</a> / <a href="https://webflow.com/" target="_blank">Webflow</a>, men gjør også produktstrategi, merkevare og andre kreative oppdrag.</p>

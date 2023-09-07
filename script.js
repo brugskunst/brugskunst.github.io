@@ -27,21 +27,34 @@ function setContactTab(){
 // Service Tool tip
 
 //tips
+
+var windowSize = window.innerWidth;
+function setSize(){
+	console.log(windowSize);
+	windowSize = window.innerWidth;
+	location.reload();
+}
+
 var tooltip = document.querySelectorAll('.serviceToolTip');
 var img = document.querySelectorAll('.toolTipImage');
 document.addEventListener('mousemove', fn, false);
 function fn(e) {
 
+	if(windowSize<600){
+		return;
+	}
+
 	for (var i=img.length; i--;) {
 		img[i].style.left = e.pageX + 'px';
 		img[i].style.top = e.pageY + 'px';
-    }
+	}
 
-    for (var i=tooltip.length; i--;) {
-        tooltip[i].style.left = e.pageX + 'px';
-        tooltip[i].style.top = e.pageY + 'px';
-    }
+	for (var i=tooltip.length; i--;) {
+		tooltip[i].style.left = e.pageX + 'px';
+		tooltip[i].style.top = e.pageY + 'px';
+	}
 }
+
 
 
 // On load
