@@ -82,7 +82,7 @@ body{
     align-items: flex-start;
     gap: 4px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 h1{
@@ -160,6 +160,24 @@ button{
 
 
 /* Services */
+
+
+/* band */
+
+.toolTip:hover .toolTipImage {
+    display: block;
+}
+
+.toolTipImage {
+    display: none;
+    margin-left: 28px;
+    position: absolute;
+    z-index: 1000;
+    max-width: 100px;
+    transform: rotate(5deg);
+    border-radius: 2px;
+}
+
 
 #Tjenester ul{
     margin-top: 16px;

@@ -18,8 +18,6 @@ function openContent(evt, tab) {
 	}
 	document.getElementById(tab).style.display = "block";
 	evt.currentTarget.className += " active";
-
-	console.log(evt);
 }
 
 function setContactTab(){
@@ -28,9 +26,15 @@ function setContactTab(){
 
 // Service Tool tip
 
+//tips
 var tooltip = document.querySelectorAll('.serviceToolTip');
+var band = document.querySelectorAll('.toolTipImage');
 document.addEventListener('mousemove', fn, false);
 function fn(e) {
+
+	band[0].style.left = e.pageX + 'px';
+	band[0].style.top = e.pageY + 'px';
+
     for (var i=tooltip.length; i--;) {
         tooltip[i].style.left = e.pageX + 'px';
         tooltip[i].style.top = e.pageY + 'px';
