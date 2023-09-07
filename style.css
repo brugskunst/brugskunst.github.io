@@ -176,7 +176,7 @@ button{
     border: 1px solid #DA6934;
     border-radius: 1000px;
     transition: all 0.2s;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 #Tjenester button:hover{
@@ -208,7 +208,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
 }
 
 /* Galleries */
@@ -304,6 +304,10 @@ button{
 }
 
 @media screen and (max-width: 600px) {
+
+    body > div{
+        padding: 16px;
+    }
     
     #header{
         margin-bottom: 16px;
