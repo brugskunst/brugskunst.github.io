@@ -19,7 +19,7 @@ li::before{
 
 ::selection {
     color: #FFFCF3;
-    background: #DA6934;
+    background: #D35E27;
 }
 
 ::-webkit-scrollbar {
@@ -36,13 +36,13 @@ body, html{
     font-family: 'Merriweather', serif;
     box-sizing: content-box;
     background-color: #FFFCF3;
-    color: #DA6934;
+    color: #D35E27;
     position: relative;
 }
 
 body{
     font-size: 14px;
-    color: #DA6934;
+    color: #D35E27;
     min-height: -webkit-fill-available;
     width: 100%;
     height: 100%;
@@ -74,7 +74,7 @@ body{
 /* ----- HEADER ----- */
 
 #header *{
-    color: #DA6934;
+    color: #D35E27;
 }
 
 #header{
@@ -114,7 +114,7 @@ h1,h2{
 button{
     background-color: unset;
     font-size: 1rem;
-    color: #DA6934;
+    color: #D35E27;
     border: none;
     outline: none;
     cursor: pointer;
@@ -154,7 +154,7 @@ button{
 }
 
 #content *{
-    color: #DA6934;
+    color: #D35E27;
 }
 
 
@@ -191,7 +191,7 @@ button{
 
 #Tjenester button{
     padding: 4px 8px;
-    border: 1px solid #DA6934;
+    border: 1px solid #D35E27;
     border-radius: 1000px;
     transition: all 0.2s;
     font-size: 1rem;
@@ -199,7 +199,7 @@ button{
 
 #Tjenester button:hover{
     color: #FFFCF3;
-    background-color: #DA6934;
+    background-color: #D35E27;
 }
 
 .service:hover .serviceToolTip {
@@ -211,7 +211,7 @@ button{
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     color: #FFFCF3 !important;
-    background: #DA6934;
+    background: #D35E27;
     margin-left: 28px;
     padding: 8px;
     position: absolute;
@@ -318,7 +318,7 @@ button{
     opacity: 0.5;
     padding-top: 56px;
     padding-bottom: 24px;
-    color: #DA6934;
+    color: #D35E27;
 }
 
 
