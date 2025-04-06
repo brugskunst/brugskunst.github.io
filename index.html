@@ -17,79 +17,12 @@
     <body id="body" onresize="setSize()">
         <div id="overlay"></div>
         <div id="header" class="">
-            <h1>Kristiansen <span class="service">Brugskunst<span class="serviceToolTip">Fra dansk, "brugskunst" omhandler utformingen av gjenstander og vertkøy i daglig bruk</span></span></h1>
-            <h2>er et bittelitte designbyrå som lager nyttige digitale produkter.</h2>
-        </div>
-
-        <div class="tab">
-            <button class="tablinks active" onclick="openContent(event, 'Tjenester')">Tjenester</button>
-            <!-- <button class="tablinks" onclick="openContent(event, 'Arbeid')">Arbeid</button> -->
-            <!-- <button class="tablinks" onclick="openContent(event, 'Udsalg')">Udsalg</button> -->
-            <button class="tablinks" onclick="openContent(event, 'Informasjon')">Informasjon</button>
-            <button id="contactTabButton" class="tablinks" onclick="openContent(event, 'Kontakt')">Kontakt</button>
+            <h2>Kristiansen <span class="service">Brugskunst<span class="serviceToolTip">Fra dansk, "brugskunst" omhandler utformingen av gjenstander og vertkøy i daglig bruk</span></span> er et bittelitte designbyrå som lager nyttige digitale produkter.</h2>
         </div>
 
         <div id="content">
-            <div id="Tjenester" class="tabcontent" style="display: block;">
-                <p>K/B er et <span class="toolTip">ettmannsband<img class="toolTipImage lozad" src="img/band.gif"></span> som kan hjelpe deg med:</p>
-                <ul>
-                    <li class="service">UI/UX design
-                        <span class="serviceToolTip">Utforming, testing og av digitale brukergrensesnitt</span>
-                    </li>
-                    <li class="service">Produktdesign og strategi
-                        <span class="serviceToolTip">Utforske, predikere og definere product-market fit</span>
-                    </li>
-                    <li class="service">Digital prototyping
-                        <span class="serviceToolTip">Produksjon av digitale løsninger i Figma</span>
-                    </li>
-                    <li class="service">Heuristisk evaluering
-                        <span class="serviceToolTip">3dje-parts evalureing av brukbarheten til en applikasjon</span>
-                    </li>
-                    <li class="service">Universell utforming
-                        <span class="serviceToolTip">Utforming av grensesnitt som følger WCAG-kravene</span>
-                    </li>
-                    <li class="service">Web- design og utvikling
-                        <span class="serviceToolTip">Produksjon av nettsider, både statiske og redigerbare</span>
-                    </li>
-                </ul>
-                <div id="contact_container">
-                    <p>Har du et prosjekt i mente?</p>
-                    <button class="tablinks" onclick="openContent(event, 'Kontakt'),setContactTab()">Ta kontakt</button>
-                </div>
-            </div>
-
-            <div id="Arbeid" class="tabcontent">
-                <p>Nylig arbeid fra K/B</p>
-                <div class="workCollection">
-                    <div class="toolTip workContainer">
-                        <img class="toolTipImage workImg lozad" src="img/sportscenteret.png" alt="Sportscenteret AS mockup">
-                        <a href="https://sportscenteret.no" target="_blank">Sportscenteret AS<span>→</span></a>
-                    </div>
-                    <div class="toolTip workContainer">
-                        <img class="toolTipImage workImg lozad"  src="img/skorkoken.png" alt="Skokroken AS mockup">
-                        <a href="https://skorkoken.no" target="_blank">Skokroken AS<span>→</span></a>
-                    </div>
-                    <div class="toolTip workContainer">
-                        <img class="toolTipImage workImg lozad" src="img/syse.png" alt="Henrik Syse website mockup">
-                        <a href="https://henriksyse.no" target="_blank">Henrik Syse<span>→</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="Udsalg" class="tabcontent">
-                <script src="https://gumroad.com/js/gumroad-embed.js"></script>
-                <div class="gumroad-product-embed"><a href="https://brugskunst.gumroad.com/l/cuttingmat">Loading...</a></div>
-            </div>
-
-            <div id="Informasjon" class="tabcontent">
-                <p>Kristiansen Brugskunst utformer, utvikler og planlegger statiske og interaktive opplevelser for gøy og nytte. K/B kan hjelpe deg med nettsider, produktstrategi, merkevare og andre kreative oppdrag.</p>
-                <p>Alle leveranser følger standardisert designprosess, hvor grundig analyse av behov, brukergruppe, marked og målbilde ligger til grunn for løsningen.</p>
-                <p>Vi bruker <a href="https://www.figma.com/figjam/" target="_blank">Figjam</a> for strukrur av innsikt og samarbeid, <a href="https://www.figma.com/" target="_blank">Figma</a> for design, og <a href="https://www.framer.com" target="_blank">Framer</a>, <a href="https://blot.im" target="_blank">Blot</a> eller <a href="https://webflow.com" target="_blank">Webflow</a> for implementasjon av løsningen.</p>
-                <p>K/B er et et enkeltpersonforetak i regi av <a href="https://hmkristiansen.no/" target="_blank" class="toolTip">Henrik<img src="img/henrik.jpeg" class="toolTipImage lozad"></a>.</p>
-            </div>
-            <div id="Kontakt" class="tabcontent">
+            <div id="Kontakt" class="tabcontent" style="display: block;">
                 <a href="mailto:kristiansen@brugskunst.no" target="_blank">kristiansen@brugskunst.no<span>→</span></a>
-                <a href="https://www.instagram.com/brugs.kunst/" target="_blank">instagram<span>→</span></a>
             </div>
         </div>
 
